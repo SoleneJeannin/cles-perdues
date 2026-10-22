@@ -201,10 +201,10 @@ Je pourrais peut-être l&#39;appeler ? Non je vais chercher moi-même. Il va pen
 (if: (visited: &quot;Ranger les couverts&quot;))[[[Chercher sur le buffet]]  [[Aller regarder la télévision]] [[Aller ouvrir la fenêtre du salon]]] (else:)[[[Regarder sur la table]]  [[Chercher sur le buffet]]  [[Aller regarder la télévision]] [[Aller ouvrir la fenêtre du salon]] ]]
 
 </tw-passagedata><tw-passagedata pid="9" name="Regarder sur la table" tags="Table" position="1125,275" size="100,100">(if: (visited: &quot;Lire la feuille de papier&quot;))[La table est mise. Arthur a du la mettre avant de partir.](else:)[La table est mise pour deux. Pour qui sont les second couverts ? 
-(after: 2s)[...]
-(after:3s)[Je suis pourtant toute seule. J&#39;ai du me tromper. 
+(after: 1s)[...]
+(after:2s)[Je suis pourtant toute seule. J&#39;ai du me tromper. 
 Je devrais continuer de chercher les clés.]]
-(live:5s)[(stop:)
+(live:2s)[(stop:)
 	[[Chercher dans le couloir-&gt;Sortir du salon]] [[Ranger les couverts]] [[Chercher ailleurs au salon-&gt;Aller dans le salon]] ]</tw-passagedata><tw-passagedata pid="10" name="Sortir du salon" tags="Porte" position="1300,275" size="100,100">Le couloir. Bon...Qu&#39;est ce que je voulais faire, déjà ?
 
 [[Aller dans la cuisine]] [[Aller dans la chambre]] [[Retourner à la porte-&gt;Aller à la porte]]</tw-passagedata><tw-passagedata pid="11" name="Aller dans la cuisine" tags="Cuisine" position="1500,200" size="100,100">Rien ici, peut-être que je trouverai les clés ailleurs.
@@ -216,7 +216,7 @@ Je devrais continuer de chercher les clés.]]
 (live:5s)[(stop:)
  	[[Aller dans le jardin]]]</tw-passagedata><tw-passagedata pid="13" name="Essayer de sortir par la fenêtre" tags="Salon" position="1250,525" size="100,100">C&#39;est un peu trop haut pour moi...
 
-[[Escalader avec une chaise-&gt;Prendre une chaise]] [[Retourner à la porte-&gt;Aller à la porte]] [[Aller dans le salon]]</tw-passagedata><tw-passagedata pid="14" name="Prendre une chaise" tags="Salon" position="1375,525" size="100,100">Ce n&#39;est pas aussi facile que quand j&#39;étais enfant !
+[[Escalader avec une chaise-&gt;Prendre une chaise]] [[Retourner à la porte-&gt;Aller à la porte]] [[Chercher dans le salon-&gt;Aller dans le salon]]</tw-passagedata><tw-passagedata pid="14" name="Prendre une chaise" tags="Salon" position="1375,525" size="100,100">Ce n&#39;est pas aussi facile que quand j&#39;étais enfant !
 
 [[Grimper sur la chaise]] [[Retourner à la porte-&gt;Aller à la porte]] </tw-passagedata><tw-passagedata pid="15" name="Continuer de regarder" tags="Canapé" position="2050,375" size="100,100">Raconter une histoire
 
@@ -232,9 +232,7 @@ Je devrais continuer de chercher les clés.]]
 Rha je me suis fait mal !
 (after:2s)[Le mur est haut de ce côté, je ne pourrais pas rerentrer...
 J&#39;ai mal, comment je vais faire ? Pourquoi j&#39;ai fait ça ?]
-
-(live:4s)[
-	(stop:)
+(live:4s)[(stop:)
     [[Aller à la porte d&#39;entrée-&gt;Aller s&#39;assoir à la porte]] [[Faire le tour de la maison]]]</tw-passagedata><tw-passagedata pid="19" name="Aller s&#39;assoir à la porte" tags="Jardin" position="1750,475" size="100,100">*Chants d&#39;oiseaux et bruits de la ville*(link: &quot;▶&quot;)[&lt;audio src=&quot;https://solene-jeannin.com/wp-content/uploads/2026/10/garden-ambience-236744.mp3&quot; autoplay&gt;&lt;/audio&gt;]
 ...
 
@@ -242,9 +240,7 @@ J&#39;ai mal, comment je vais faire ? Pourquoi j&#39;ai fait ça ?]
 J&#39;ai de plus en plus mal à la cheville...Ça ne me rassure pas vraiment.
 
 (after:3s)[Oh, il y a une porte, à l&#39;arrière de la maison. Comment ai-je pu l&#39;oublier ?]
-
-(live:5s)[
-	(stop:)
+(live:5s)[(stop:)
 	[[Essayer d&#39;ouvrir la porte]]]</tw-passagedata><tw-passagedata pid="21" name="Essayer d&#39;ouvrir la porte" tags="Jardin" position="1900,700" size="100,100">*Chants d&#39;oiseaux et bruits de la ville*(link: &quot;▶&quot;)[&lt;audio src=&quot;https://solene-jeannin.com/wp-content/uploads/2026/10/garden-ambience-236744.mp3&quot; autoplay&gt;&lt;/audio&gt;]
 Elle est ouverte ! J&#39;ai mal, je ferai mieux d&#39;aller m&#39;assoire un peu.
 
@@ -257,7 +253,7 @@ Elle est ouverte ! J&#39;ai mal, je ferai mieux d&#39;aller m&#39;assoire un peu
 	[[&quot;Je suis tombée&quot;]]]</tw-passagedata><tw-passagedata pid="23" name="&quot;Je suis tombée&quot;" tags="Canapé" position="2175,700" size="100,100">&quot;Comment tu as fait ?&quot;
 (after:1s)[...]
 (live:2s)[(stop:)
-    [[J&#39;ai... J&#39;ai juste trébuché]]]</tw-passagedata><tw-passagedata pid="24" name="J&#39;ai... J&#39;ai juste trébuché" tags="Canapé" position="2300,700" size="100,100">Bon, je vais t&#39;apporter de la glace, tu peux aller à table ? On va se mettre à table, on verra si le froid te fait du bien.
+    [[J&#39;ai... J&#39;ai juste trébuché]]]</tw-passagedata><tw-passagedata pid="24" name="J&#39;ai... J&#39;ai juste trébuché" tags="Canapé" position="2300,700" size="100,100">Bon, je vais t&#39;apporter de la glace, tu peux aller à table ? Assis toi pour manger, on verra si le froid te fait du bien.
 
 [[Aller manger avec un mal de cheville]]</tw-passagedata><tw-passagedata pid="25" name="Aller manger avec un mal de cheville" tags="Fin" position="2550,650" size="100,100">(if: (visited: &quot;Ranger les couverts&quot;))[
 &quot;Bah ? Pourquoi tu as rangé les couvets, Maman ? On les avait mis juste avant que je parte ?&quot;
